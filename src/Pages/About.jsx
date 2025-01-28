@@ -28,7 +28,7 @@ const Header = memo(() => (
 ));
 
 const ProfileImage = memo(() => (
-  <div className="flex justify-end items-center sm:p-12 sm:py-0 sm:pb-0 p-0 py-2 pb-2 md:pr-16 lg:pr-24">
+  <div className="flex justify-end items-center sm:p-12 sm:py-0 sm:pb-0 p-0 py-2 pb-2 md:pr-0 lg:pr-0">
     <div 
       className="relative group" 
       data-aos="fade-up"
