@@ -15,6 +15,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Certificate from "../components/Certificate";
 import { Code, Award, Boxes, GraduationCap } from "lucide-react";
+import weatherImg from "../../public/projects/weather.png";
+import plantDiseaseImg from "../../public/projects/plant disease.png";
+import farmersAssistantImg from "../../public/projects/farmers assistant.png";
+import cmsImg from "../../public/projects/cms.png";
+import nptelImg from "../../public/images/certificates/nptel.png";
+import internshipImg from "../../public/images/certificates/internship.jpg";
+import cricketImg from "../../public/images/certificates/cricket.jpg";
+import gregoriaImg from "../../public/images/certificates/gregoria.jpg";
 
 // Separate ShowMore/ShowLess button component
 const ToggleButton = ({ onClick, isShowingMore }) => (
@@ -184,7 +192,7 @@ export default function FullWidthTabs() {
           id: "weather-monitoring",
           Title: "Weather Monitoring App",
           Description: "This weather application is designed to provide users with real-time weather information for specific locations. It retrieves weather data from online APIs, processes it, and displays it in a user-friendly format using a web interface. The app is structured with a backend powered by Python and Flask and a frontend that uses HTML templates for presentation.",
-          Img: "/projects/weather.png",
+          Img: weatherImg,
           TechStack: ["Python", "Flask", "HTML", "OpenWeatherMap API"],
           Features: [
             "Real-time Weather Information",
@@ -197,7 +205,7 @@ export default function FullWidthTabs() {
           id: "plant-disease-detection",
           Title: "Plant Disease Detection",
           Description: "Plant Disease Detection aims to leverage technology to accurately identify and diagnose diseases in plants using advanced image processing techniques. The system analyzes images of plant leaves, stems, or fruits to detect visible symptoms like spots, discoloration, or wilting, helping to pinpoint specific diseases affecting the plant.",
-          Img: "/projects/plant disease.png",
+          Img: plantDiseaseImg,
           TechStack: ["Python", "OpenCV", "TensorFlow", "PyTorch", "React Native", "AWS"],
           Features: [
             "Image Acquisition & Processing",
@@ -212,7 +220,7 @@ export default function FullWidthTabs() {
           id: "farmers-assistant",
           Title: "Farmers Assistant",
           Description: "The main objective is to identify plant diseases using image processing. The system also identifies insects and pests responsible for epidemic plant diseases.",
-          Img: "/projects/farmers assistant.png",
+          Img: farmersAssistantImg,
           TechStack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Python", "Machine Learning"],
           Features: ["Plant Disease Detection", "Pest Identification", "Image Processing"]
         },
@@ -220,7 +228,7 @@ export default function FullWidthTabs() {
           id: "clinic-management",
           Title: "Clinic Management System",
           Description: "A comprehensive software solution designed to streamline the administration, operation, and record-keeping processes of a medical clinic. It encompasses tasks such as patient registration, appointment scheduling, medical record management, billing, inventory tracking, and report generation.",
-          Img: "/projects/cms.png",
+          Img: cmsImg,
           TechStack: ["HTML", "CSS", "JavaScript", "PHP", "Python", "MongoDB"],
           Features: ["Patient Registration", "Appointment Scheduling", "Medical Record Management", "Billing System", "Inventory Tracking", "Report Generation"]
         },
@@ -238,25 +246,25 @@ export default function FullWidthTabs() {
           id: "nptel",
           Title: "NPTEL Certification",
           Description: "NPTEL Online Certification",
-          Img: "/images/certificates/nptel.png"
+          Img: nptelImg
         },
         {
           id: "internship",
           Title: "Internship Certificate",
           Description: "Internship Completion Certificate",
-          Img: "/images/certificates/internship.jpg"
+          Img: internshipImg
         },
         {
           id: "cricket",
           Title: "Cricket Achievement",
           Description: "Cricket Achievement Certificate",
-          Img: "/images/certificates/cricket.jpg"
+          Img: cricketImg
         },
         {
           id: "gregoria",
           Title: "Gregoria Certificate",
           Description: "Gregoria Achievement Certificate",
-          Img: "/images/certificates/gregoria.jpg"
+          Img: gregoriaImg
         }
       ];
 
