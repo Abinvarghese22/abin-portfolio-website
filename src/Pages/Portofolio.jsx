@@ -478,37 +478,33 @@ export default function FullWidthTabs() {
           </TabPanel>
 
           <TabPanel value={value} index={3} dir={theme.direction}>
-            <div className="container mx-auto flex flex-col gap-8 overflow-hidden pb-[5%]">
-              {educationData.map((edu, index) => (
-                <div
-                  key={edu.id}
-                  className="bg-white/5 rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all"
-                  data-aos={index === 0 ? "fade-right" : "fade-left"}
-                  data-aos-duration="1000"
-                >
-                  <div className="flex flex-col gap-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h3 className="text-xl font-semibold text-white">{edu.institution}</h3>
-                        <p className="text-indigo-400 font-medium">{edu.degree}</p>
-                        <p className="text-gray-400">{edu.field}</p>
+            <div className="container mx-auto px-2 sm:px-4 py-4 sm:py-8">
+              <div className="grid grid-cols-1 gap-4 sm:gap-6">
+                {educationData.map((edu, index) => (
+                  <div
+                    key={index}
+                    className="bg-gray-900/50 backdrop-blur-lg rounded-lg p-4 sm:p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10 relative overflow-hidden group"
+                    data-aos="fade-up"
+                    data-aos-duration={1000 + index * 100}
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#6366f1]/20 to-[#a855f7]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">{edu.institution}</h3>
+                    <p className="text-purple-400 font-medium mb-1">{edu.degree}</p>
+                    <p className="text-gray-400 text-sm mb-2">{edu.field}</p>
+                    <p className="text-gray-500 text-sm mb-4">{edu.year} • {edu.location}</p>
+                    {edu.achievements && edu.achievements.length > 0 && (
+                      <div className="space-y-2">
+                        <p className="text-sm font-medium text-gray-300">Achievements:</p>
+                        <ul className="list-disc list-inside text-sm text-gray-400 space-y-1 ml-2">
+                          {edu.achievements.map((achievement, i) => (
+                            <li key={i} className="text-sm">{achievement}</li>
+                          ))}
+                        </ul>
                       </div>
-                      <div className="text-right">
-                        <p className="text-gray-400">{edu.year}</p>
-                        <p className="text-gray-500">{edu.location}</p>
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="text-white font-medium mb-2">Achievements & Activities</h4>
-                      <ul className="list-disc list-inside space-y-1">
-                        {edu.achievements.map((achievement, i) => (
-                          <li key={i} className="text-gray-400">{achievement}</li>
-                        ))}
-                      </ul>
-                    </div>
+                    )}
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </TabPanel>
         </SwipeableViews>
