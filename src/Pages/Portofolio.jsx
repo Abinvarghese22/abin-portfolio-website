@@ -15,14 +15,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Certificate from "../components/Certificate";
 import { Code, Award, Boxes, GraduationCap } from "lucide-react";
-import weatherImg from "../../public/projects/weather.png";
-import plantDiseaseImg from "../../public/projects/plant disease.png";
-import farmersAssistantImg from "../../public/projects/farmers assistant.png";
-import cmsImg from "../../public/projects/cms.png";
-import nptelImg from "../../public/images/certificates/nptel.png";
-import internshipImg from "../../public/images/certificates/internship.jpg";
-import cricketImg from "../../public/images/certificates/cricket.jpg";
-import gregoriaImg from "../../public/images/certificates/gregoria.jpg";
+import weatherImg from "../assets/projects/weather.png";
+import plantDiseaseImg from "../assets/projects/plant disease.png";
+import farmersAssistantImg from "../assets/projects/farmers assistant.png";
+import cmsImg from "../assets/projects/cms.png";
+import nptelImg from "../assets/certificates/nptel.png";
+import internshipImg from "../assets/certificates/internship.jpg";
+import cricketImg from "../assets/certificates/cricket.jpg";
+import gregoriaImg from "../assets/certificates/gregoria.jpg";
 
 // Separate ShowMore/ShowLess button component
 const ToggleButton = ({ onClick, isShowingMore }) => (
