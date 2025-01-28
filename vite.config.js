@@ -21,8 +21,12 @@ export default defineConfig({
       output: {
         manualChunks: undefined,
       },
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+      },
     },
     copyPublicDir: true,
+    assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
   },
   publicDir: 'public',
 })
