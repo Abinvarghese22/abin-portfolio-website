@@ -197,7 +197,7 @@ export default function FullWidthTabs() {
           id: "plant-disease-detection",
           Title: "Plant Disease Detection",
           Description: "Plant Disease Detection aims to leverage technology to accurately identify and diagnose diseases in plants using advanced image processing techniques. The system analyzes images of plant leaves, stems, or fruits to detect visible symptoms like spots, discoloration, or wilting, helping to pinpoint specific diseases affecting the plant.",
-          Img: "/projects/plant disease.png",
+          Img: "/projects/plant%20disease.png",
           TechStack: ["Python", "OpenCV", "TensorFlow", "PyTorch", "React Native", "AWS"],
           Features: [
             "Image Acquisition & Processing",
@@ -212,7 +212,7 @@ export default function FullWidthTabs() {
           id: "farmers-assistant",
           Title: "Farmers Assistant",
           Description: "The main objective is to identify plant diseases using image processing. The system also identifies insects and pests responsible for epidemic plant diseases.",
-          Img: "/projects/farmers assistant.png",
+          Img: "/projects/farmers%20assistant.png",
           TechStack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Python", "Machine Learning"],
           Features: ["Plant Disease Detection", "Pest Identification", "Image Processing"]
         },
